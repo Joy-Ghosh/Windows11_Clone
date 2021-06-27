@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./asset/Windows Icons/windows-11.svg" type="image/gif" sizes="16x16">
     <title>windows 11</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -47,7 +48,14 @@
 
             <div class="head_row">
                 <p class="text">Pinned</p>
-                <button>All Apss</button>
+                <button class="btn">
+                    <span class="text">
+                        All apps
+                    </span>
+
+                    <img class="image" src="./asset/Windows Icons/rightarrow_121279.ico" alt="">
+
+                </button>
             </div>
 
             <div class="app_row">
@@ -128,8 +136,16 @@
         <div class="recomended">
             <div class="head_row">
                 <p class="text">Recomended</p>
-                <button>More</button>
+                <button class="btn">
+                    <span class="text">
+                        More
+                    </span>
+
+                    <img class="image" src="./asset/Windows Icons/rightarrow_121279.ico" alt="">
+
+                </button>
             </div>
+
             <div class="recomended_row">
                 <div class="box">
                     <img class="recomended_icon edge" src="./asset/Windows Icons/Video file.ico" alt="">
@@ -147,14 +163,25 @@
                     </div>
                 </div>
             </div>
-
         </div>
 
-        <!-- Search -->
-        <div class="search">
+
+        <!-- divider -->
+
+        <hr class="solid">
+
+
+        <!-- User -->
+        <div class="user">
             <div class="head_row">
-                <p class="text">Search Box</p>
-                <button>Power</button>
+                <div class="user_box">
+                    <img class="image" src="./asset/Windows Icons/user1.ico" alt="">
+                    <p class="text">Joy</p>
+                </div>
+
+                <button class="btn">
+                    <img class="image" src="./asset/Windows Icons/Power.ico" alt="">
+                </button>
             </div>
 
         </div>
@@ -162,9 +189,9 @@
 
 
     <!-- Video bg -->
-    <!-- <video autoplay muted id="vid">
+    <video autoplay muted id="vid">
         <source src="./asset/vdo/video.webm" type="video/webm">
-    </video> -->
+    </video>
 </body>
 <script src="./js/script.js"></script>
 

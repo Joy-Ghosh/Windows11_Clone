@@ -5,10 +5,13 @@
 }
 
 body {
-  background-image: url("../asset/wall.jpg");
-  background-size: cover;
+  /* background-image: url("../asset/wall.jpg"); */
+  /* background-size: cover; */
   overflow: hidden;
   height: 100vh;
+}
+#vid {
+  width: 100%;
 }
 .taskbar {
   background-color: #f3f3f3;
@@ -70,7 +73,6 @@ body {
   padding-bottom: 5px;
 }
 
-
 /* Start Menu */
 .startmenu {
   background-color: #f3f3f3;
@@ -80,7 +82,7 @@ body {
   flex-direction: column;
   bottom: -655px;
   width: 40%;
-  height: 70%;
+  height: 75%;
   left: 31%;
   border-radius: 8px;
   text-align: center;
@@ -99,8 +101,25 @@ body {
   justify-content: space-between;
   margin: 0px 25px;
 }
+.startmenu .pinned .head_row .btn {
+  background-color: #ffff;
+  border-style: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 5px;
+}
+.startmenu .pinned .head_row .btn:hover {
+  cursor: pointer;
+}
+.startmenu .pinned .head_row .btn .image {
+  padding: 3px;
+  width: 14px;
+}
+
 .startmenu .pinned .app_row {
-  margin: 12px 5px;
+  margin: 10px 5px;
   display: flex;
   justify-content: flex-start;
 }
@@ -133,6 +152,24 @@ body {
   margin: 0px 25px;
   align-items: center;
 }
+
+.startmenu .recomended .head_row .btn {
+  background-color: #ffff;
+  border-style: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 5px;
+}
+.startmenu .recomended .head_row .btn:hover {
+  cursor: pointer;
+}
+.startmenu .recomended .head_row .btn .image {
+  padding: 3px;
+  width: 14px;
+}
+
 .startmenu .recomended .recomended_row .box .recomended_icon {
   height: 32px;
   width: 32px;
@@ -162,15 +199,48 @@ body {
   color: rgb(53, 53, 53);
 }
 
-/* Search */
-.startmenu .search {
+/* divider */
+hr.solid {
+  border-top: 1px solid #d8d8d8;
+}
+
+/* User */
+.startmenu .user {
   display: flex;
   flex-direction: column;
   padding: 15px;
 }
 
-.startmenu .search .head_row {
+.startmenu .user .head_row {
   display: flex;
   justify-content: space-between;
   margin: 0px 25px;
+  align-items: center;
+}
+
+
+.startmenu .user .head_row .user_box {
+  display: flex;
+  align-items: center;
+}
+.startmenu .user .head_row .user_box .image {
+  background-color: rgb(214, 214, 214);
+  border-radius: 50%;
+  padding: 3px;
+  width: 25px;
+}
+
+.startmenu .user .head_row .user_box .text {
+  padding-left: 10px;
+}
+.startmenu .user .head_row .btn {
+  background-color: #f3f3f3;
+  border-style: none;
+}
+.startmenu .user .head_row .btn .image {
+  padding: 3px;
+  width: 20px;
+}
+.startmenu .user .head_row .btn:hover {
+  cursor: pointer;
 }
