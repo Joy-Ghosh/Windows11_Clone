@@ -9,3 +9,45 @@ startbtn.addEventListener("click", () => {
     startmenu.style.bottom = "55px";
   }
 });
+
+
+
+months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "Augest",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+// days = [
+//   "Sunday",
+//   "Monday",
+//   "Tuesday",
+//   "Wednesday",
+//   "Thursday",
+//   "Friday",
+//   "Saturday",
+// ];
+
+now = new Date();
+curent_date = now.getDate()
+curent_month = now.getMonth()
+curent_year = now.getFullYear()
+document.getElementById("day").textContent = curent_date
+document.getElementById("month").textContent = curent_month+1;
+document.getElementById("year").textContent = curent_year
+
+curent_hour = now.getHours()
+curent_mint = now.getMinutes()
+
+document.getElementById("hour").textContent = curent_hour;
+document.getElementById("minutes").textContent = curent_mint;
+
+console.log(now)
