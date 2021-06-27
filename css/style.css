@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: url("../asset/wall.jpg");
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+}
+.taskbar {
+  background-color: #f3f3f3;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  z-index: 110;
+  justify-content: center;
+}
+.middle_menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+.middle_icon {
+  height: 32px;
+  width: 32px;
+  padding: 5px 9px;
+}
+
+.middle_icon:hover {
+  background-color: rgb(192, 192, 192);
+  border-radius: 3px;
+}
+.right_menu {
+  align-items: center;
+  justify-self: flex-end;
+  position: absolute;
+  flex-direction: column;
+  right: 0;
+  height: 50px;
+  margin: 0px 8px;
+  overflow: hidden;
+}
+.right_icon {
+  height: 17px;
+  width: 17px;
+  padding: 5px;
+  margin: 10px 0px;
+}
+.right_icon_4 {
+  margin-right: 55px;
+}
+.right_icon_5 {
+  margin-left: 20px;
+}
+.time_date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 8px;
+  right: 32px;
+  font-size: 13px;
+}
+.time_date .time {
+  padding-bottom: 5px;
+}
+
+
+/* Start Menu */
+.startmenu {
+  background-color: #f3f3f3;
+  position: absolute;
+  /* bottom: 55px; */
+  display: flex;
+  flex-direction: column;
+  bottom: -655px;
+  width: 40%;
+  height: 70%;
+  left: 31%;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.4s ease-in;
+}
+
+/* Pinned */
+
+.startmenu .pinned {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.startmenu .pinned .head_row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 25px;
+}
+.startmenu .pinned .app_row {
+  margin: 12px 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+.startmenu .pinned .app_row .icon_box {
+  width: 30px;
+  padding: 5px 5px;
+  margin: 0px 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.startmenu .pinned .app_row .icon_box .startmenu_icon {
+  height: 32px;
+  width: 32px;
+}
+.startmenu .pinned .app_row .icon_box .title {
+  font-size: 12px;
+}
+
+/* Recomende */
+.startmenu .recomended {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.startmenu .recomended .head_row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 25px;
+  align-items: center;
+}
+.startmenu .recomended .recomended_row .box .recomended_icon {
+  height: 32px;
+  width: 32px;
+}
+.startmenu .recomended .recomended_row {
+  margin: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.startmenu .recomended .recomended_row .box {
+  display: flex;
+  padding: 8px;
+}
+.startmenu .recomended .recomended_row .box .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+.startmenu .recomended .recomended_row .box .text .title {
+  font-size: 14px;
+}
+
+.startmenu .recomended .recomended_row .box .text .text1 {
+  font-size: 9px;
+  color: rgb(53, 53, 53);
+}
+
+/* Search */
+.startmenu .search {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.startmenu .search .head_row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 25px;
+}
