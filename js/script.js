@@ -1,3 +1,4 @@
+// start menu popup
 let startbtn = document.getElementsByClassName("start_btn")[0];
 let startmenu = document.getElementsByClassName("startmenu")[0];
 
@@ -11,7 +12,23 @@ startbtn.addEventListener("click", () => {
 });
 
 
+// start menu end
 
+
+
+
+// Open file explorer
+function CallMe() {
+  window.open("file://F:JgPracticeWindows11");
+  console.log("file")
+}
+
+//file explorer end
+
+
+
+
+// date time start
 months = [
   "January",
   "February",
@@ -51,3 +68,6 @@ document.getElementById("hour").textContent = curent_hour;
 document.getElementById("minutes").textContent = curent_mint;
 
 console.log(now)
+
+
+// date time end

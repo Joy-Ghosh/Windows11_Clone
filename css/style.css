@@ -86,6 +86,7 @@ body {
   left: 31%;
   border-radius: 8px;
   text-align: center;
+  z-index: 99;
   transition: all 0.4s ease-in;
 }
 
@@ -101,6 +102,7 @@ body {
   justify-content: space-between;
   margin: 0px 25px;
 }
+
 .startmenu .pinned .head_row .btn {
   background-color: #ffff;
   border-style: none;
@@ -110,9 +112,11 @@ body {
   justify-content: center;
   padding: 2px 5px;
 }
-.startmenu .pinned .head_row .btn:hover {
+
+.startmenu .pinned .head_row .btn:hover{
   cursor: pointer;
 }
+
 .startmenu .pinned .head_row .btn .image {
   padding: 3px;
   width: 14px;
@@ -131,13 +135,19 @@ body {
   flex-direction: column;
   align-items: center;
 }
+/* .startmenu .pinned .app_row .icon_box:hover{
+  background-color: rgb(192, 192, 192);
+} */
 .startmenu .pinned .app_row .icon_box .startmenu_icon {
   height: 32px;
   width: 32px;
 }
 .startmenu .pinned .app_row .icon_box .title {
   font-size: 12px;
+  cursor: default;
 }
+
+
 
 /* Recomende */
 .startmenu .recomended {
@@ -189,6 +199,7 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   padding-left: 10px;
+  cursor: default;
 }
 .startmenu .recomended .recomended_row .box .text .title {
   font-size: 14px;
